@@ -11,3 +11,11 @@
 
 ```bash
 kubectl apply -f manifests/
+## 🌐 تست پروژه
+
+برای تست، ابتدا سرویس را اجرا کرده و سپس با دستور زیر وضعیت را بررسی کنید:
+
+```bash
+kubectl get svc node-api-service
+
+curl http://<NodeIP>:<NodePort>
